@@ -1,0 +1,331 @@
+:root {
+    --verdePrimario: #21c063;
+    /*verde*/
+    --grisPrimario: #f4f4f4;
+    /*gris*/
+    --negroPrimario: #323232;
+    /*negro*/
+    --grisItemPrimario: #616783;
+    /*grisItems*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--negroPrimario);
+}
+
+
+/* ---------- MENU BUSQUEDA LOGIN ----------*/
+
+.menuBusquedaLogin {
+    color: var(--negroPrimario);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menuBusquedaLogin a {
+    text-decoration: none;
+    color: var(--negroPrimario);
+}
+
+.menuBusquedaLogin a:hover {
+    color: var(--verdePrimario);
+}
+
+.cestaDeCompras i {
+    color: var(--verdePrimario);
+}
+
+.cestaDeCompras {
+    border-radius: 20px;
+    position: relative;
+}
+
+.cestaDeCompras i:hover {
+    color: var(--grisItemPrimario);
+    border-radius: 20px;
+}
+
+.cantidadItems {
+    position: absolute;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    left: 25px;
+    bottom: 30px;
+    margin: 0;
+}
+
+
+/* ---------- MENU PRINCIPAL ----------*/
+
+.menuPrincipal {
+    background-color: var(--verdePrimario);
+    max-height: auto;
+}
+
+.menuPrincipal li {
+    flex: auto;
+}
+
+.menuPrincipal a {
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+}
+
+.menuPrincipal a:hover {
+    color: var(--grisItemPrimario);
+    background-color: white;
+    transition: 0.3s;
+}
+
+.menuPrincipal a.active {
+    color: var(--verdePrimario);
+    background-image: url('../img/borde-promocion.png') !important;
+    background-size: cover, auto;
+    background-repeat: no-repeat;
+}
+
+.menuPrincipal a.active:hover {
+    color: var(--grisItemPrimario);
+}
+
+.logoWabiMenu {
+    width: 50px;
+    height: auto;
+}
+
+.iconMenuResponsive {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* ---------- BANNER ----------*/
+
+.banner {
+    position: relative;
+    background-color: #e7f3fb;
+    background: url('../img/wabi.png');
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerTexto {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 10%;
+    color: var(--negroPrimario);
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.btnDescarga {
+    background-color: red;
+    color: #fff;
+    border-radius: 25px;
+    width: 250px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.btnDescarga:hover {
+    background-color: var(--verdePrimario);
+    color: #fff;
+}
+
+
+/* ---------- CARD ITEM ----------*/
+
+.tituloSeccion {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.tituloSeccion::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: var(--verdePrimario);
+    bottom: -5px;
+}
+
+.btnAgregar {
+    background-color: var(--verdePrimario);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.btnAgregar:hover {
+    color: var(--negroPrimario);
+}
+
+.btnVerTodas {
+    border: 2px solid var(--verdePrimario);
+    color: var(--verdePrimario);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 10rem;
+    max-height: 40px;
+    font-weight: 700;
+}
+
+.btnVerTodas:hover {
+    color: var(--grisItemPrimario);
+}
+
+.itemCard {
+    position: relative;
+}
+
+.tituloItem {
+    color: var(--negroPrimario);
+}
+
+.textItem {
+    color: var(--grisItemPrimario);
+}
+
+.tagCard {
+    position: absolute;
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--grisItemPrimario);
+    background-color: var(--grisPrimario);
+    top: 15px;
+    left: 15px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1em;
+}
+
+.contenedorItem {
+    border-radius: 6px;
+    box-shadow: 0 0 8px -2px rgba(0, 0, 0, .4);
+}
+
+.contenedorItem img {
+    margin-top: 20px;
+}
+
+.codigoItem {
+    width: 35%;
+    max-height: 40px;
+    border: 1px solid var(--verdePrimario);
+    border-radius: 20px;
+    padding: 5px auto;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.infoItem .grupoAgregarItem {
+    width: 60%;
+    max-height: 40px;
+    border: 1px solid var(--verdePrimario);
+    border-radius: 20px;
+}
+
+.grupoAgregarItem a {
+    text-decoration: none;
+    color: var(--grisItemPrimario);
+    font-size: 12px;
+}
+
+.grupoAgregarItem a:hover {
+    color: var(--verdePrimario);
+}
+
+.btnAgregarItem {
+    color: var(--verdePrimario) !important;
+}
+
+.btnAgregarItem:hover {
+    color: var(--grisItemPrimario) !important;
+}
+
+.cantidadItem {
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .menuPrincipal a {
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        border-radius: 5px;
+        display: inline-block;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .menuPrincipal a {
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        border-radius: 5px;
+        display: inline-block;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bannerTexto {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: 15%;
+        color: var(--negroPrimario);
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .bannerTexto {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: 25%;
+        color: var(--negroPrimario);
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

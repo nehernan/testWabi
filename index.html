@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="wabi, promociones, bebidas, golosinas, gaseosas, ofertas">
+    <meta name="description" content="Bajate Wabi y recibí tu bebida en 15 minutos.">
+
+    <title>Wabi</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!--TIPOGRAFIA-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--ICONOS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outline" rel="stylesheet">
+
+    <!--BOOTSTRAP & CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menuBusquedaLogin sticky-top">
+        <div class="container-fluid">
+            <div class="container">
+                <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuBusquedaLogin" aria-controls="collapseMenuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">search</span>
+                </button>
+
+                <div class="collapse mx-auto navbar-collapse " id="collapseMenuBusquedaLogin">
+                    <form class="form-inline ms-4 my-2 d-flex justify-content-center align-items-center">
+                        <span class="iconoBusqueda"><i class="material-icons">search</i></span>
+                        <input class="form-control" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    </form>
+
+                    <a class="navbar-brand ms-auto mb-2" href="#">
+                        <img src="img/logoWabiMenu.png" class="img logoWabiMenu" alt="Wabi">
+                    </a>
+
+                    <ul class="navbar-nav ms-auto mx-5 my-1 mb-lg-0">
+                        <li class="nav-item dropdown my-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="seleccionIdioma" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ES</a>
+                            <div class="dropdown-menu" aria-labelledby="seleccionIdioma">
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item my-1"><a class="nav-link" href="#"><i class="material-icons">person_outline</i></a></li>
+                        <li class="nav-item my-1">
+                            <a class="nav-link cestaDeCompras" id="cestaDeCompras" href="#">
+                                <i class="material-icons">shopping_cart</i> <span class="badge cantidadItems">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg menuPrincipal">
+        <div class="container-fluid">
+            <div class="container">
+                <button class="navbar-toggler my-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuPrincipal" aria-controls="collapseMenuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons iconMenuResponsive">menu</span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapseMenuPrincipal">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center text-uppercase">
+                        <li class="nav-item"><a class="nav-link active" href="#">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Alcohol</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Beverages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Groceries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Beaut and healthcare</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Home cleaning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="banner d-flex align-items-center justify-content-center">
+        <div class="row bannerTexto">
+            <div class="col">
+                <p class="p-2 mb-0">Bajate Wabi y recibí tu bebida <br>
+                    <strong>Coca-Cola en 15 minutos</strong>
+                </p>
+                <button class="btn btnDescarga px-2 text-uppercase" id="btnDescarga">Descargá ahora</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-3">
+        <div class="row">
+            <div class="col">
+                <p class="tituloSeccion">Productos en promoción</p>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btnVerTodas" id="btnVerTodas" type="button">Ver Todas 
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-3">
+        <div class="row">
+            <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
+                <div class="card contenedorItem" style="width: 18rem;">
+                    <div class="tagCard">
+                        <p>Mínimo<br>x 1u</p>
+                    </div>
+                    <img src="img/coca.png" class="card-img-top" alt="coca cola">
+                    <div class="card-body   pt-1">
+                        <p class="card-text textItem">NESTLE GOLD CornFlakes 14 x 500g <br>
+                            <strong class="text-uppercase tituloItem">Corn Flakes</strong>
+                        </p>
+                        <h5 class="card-title">$9.30</h5>
+                        <div class="infoItem d-flex justify-content-between mb-2">
+                            <div class="codigoItem">CX14U</div>
+                            <div class="grupoAgregarItem d-flex justify-content-between align-items-center">
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>
+                                <p class="cantidadItem">1</p>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
+                            <i class="material-icons ms-2">shopping_cart</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
+                <div class="card contenedorItem" style="width: 18rem;">
+                    <div class="tagCard">
+                        <p>Mínimo<br>x 1u</p>
+                    </div>
+                    <img src="img/coca.png" class="card-img-top" alt="coca cola">
+                    <div class="card-body   pt-1">
+                        <p class="card-text textItem">NESTLE GOLD CornFlakes 14 x 500g <br>
+                            <strong class="text-uppercase tituloItem">Corn Flakes</strong>
+                        </p>
+                        <h5 class="card-title">$9.30</h5>
+                        <div class="infoItem d-flex justify-content-between mb-2">
+                            <div class="codigoItem">CX14U</div>
+                            <div class="grupoAgregarItem d-flex justify-content-between align-items-center">
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>
+                                <p class="cantidadItem">1</p>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
+                            <i class="material-icons ms-2">shopping_cart</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
+                <div class="card contenedorItem" style="width: 18rem;">
+                    <div class="tagCard">
+                        <p>Mínimo<br>x 1u</p>
+                    </div>
+                    <img src="img/coca.png" class="card-img-top" alt="coca cola">
+                    <div class="card-body   pt-1">
+                        <p class="card-text textItem">NESTLE GOLD CornFlakes 14 x 500g <br>
+                            <strong class="text-uppercase tituloItem">Corn Flakes</strong>
+                        </p>
+                        <h5 class="card-title">$9.30</h5>
+                        <div class="infoItem d-flex justify-content-between mb-2">
+                            <div class="codigoItem">CX14U</div>
+                            <div class="grupoAgregarItem d-flex justify-content-between align-items-center">
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>
+                                <p class="cantidadItem">1</p>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
+                            <i class="material-icons ms-2">shopping_cart</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
+                <div class="card contenedorItem" style="width: 18rem;">
+                    <div class="tagCard">
+                        <p>Mínimo<br>x 1u</p>
+                    </div>
+                    <img src="img/coca.png" class="card-img-top" alt="coca cola">
+                    <div class="card-body   pt-1">
+                        <p class="card-text textItem">NESTLE GOLD CornFlakes 14 x 500g <br>
+                            <strong class="text-uppercase tituloItem">Corn Flakes</strong>
+                        </p>
+                        <h5 class="card-title">$9.30</h5>
+                        <div class="infoItem d-flex justify-content-between mb-2">
+                            <div class="codigoItem">CX14U</div>
+                            <div class="grupoAgregarItem d-flex justify-content-between align-items-center">
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>
+                                <p class="cantidadItem">1</p>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
+                            <i class="material-icons ms-2">shopping_cart</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--BOOTSTRAP.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+
+</html>
